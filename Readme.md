@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Денис Убейкобылин](https://up.htmlacademy.ru/htmlcss/20/user/490983).
-* Наставник: `Неизвестно`.
+* Наставник: [Алекс AlexJedi Шевляков](https://up.htmlacademy.ru/htmlcss/20/user/217132).
 
 ---
 

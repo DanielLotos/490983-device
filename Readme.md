@@ -1,8 +1,8 @@
 # Личный проект «Девайс»
 
 * Студент: [Денис Убейкобылин](https://up.htmlacademy.ru/htmlcss/20/user/490983).
-* Наставник: [Алекс AlexJedi Шевляков](https://up.htmlacademy.ru/htmlcss/20/user/217132).
-ЗАПУШИЛ ЛУЧШИЙ ТЕКСТ НА ПЛАНЕТЕ ЗЕМЛЯ
+* Наставник: [Алекс AlexJedi Шевляков](https://up.htmlacademy.ru/htmlcss/20/user/217132)
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

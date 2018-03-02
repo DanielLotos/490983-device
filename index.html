@@ -8,7 +8,144 @@
   </head>
   <body>
 
+    <header class="main-header">
+      <h1 class="visually-hidden">Интернет-магазин аксессуаров Device</h1>
+      <div class="header-wrapper">
+        <img src="logo.png" alt="Логотип" class="header-logo" width="165" height="36">
+        <input type="search" name="q" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти">
+        <h2 class="catalog-title">каталог товаров</h2>
+        <div class="header-catalog-wrapper">
+            <ul class="header-catalog-list">
+              <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="catalog-list">
+              <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="header-wrapper">
+        <nav class="user-navigation">
+          <ul class="navigation-links">
+            <li class="login-link">Войти</li>
+            <li class="user-sign-in">Валентин Петухов</li>
+            <li class="go-out-link">Выйти</li>
+            <li class="compare"><a href="compare.html">Сравнить</a></li>
+            <li class="cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+          <ul class="header-services">
+            <li><a href="">доставка</a></li>
+            <li><a href="">гарантия</a></li>
+            <li><a href="">контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main class="main-content">
+
+      <section class="slider">
+
+        <section class="slide-1">
+          <img src="img/slide1.png" alt="Изображение первого слайда">
+          <span class="slide-num">01</span>
+            <b class="slide-title">Делай селфи, <br>как Бен Стиллер!</b>
+          <p class="slide-info">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="#" class="slide-about-item">Подробнее</a>
+          <table class="charesteristic">
+            <tr class="character-value">
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr class="character">
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="slide-2">
+            <img src="img/slide2.png" alt="Изображение второго слайда">
+            <span class="slide-num">02</span>
+              <b class="slide-title">Худеем <br>правиьно!</b>
+            <p class="slide-info">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <a href="#" class="slide-about-item">Подробнее</a>
+            <table class="charesteristic">
+              <tr class="character-value">
+                <td>48 часов</td>
+              </tr>
+              <tr class="character">
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="slide-3">
+              <img src="img/slide3.png" alt="Изображение третьего слайда">
+              <span class="slide-num">03</span>
+                <b class="slide-title">Порхает как бабочка, жалит как пчела!</b>
+              <p class="slide-info">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a href="#" class="slide-about-item">Подробнее</a>
+              <table class="charesteristic">
+                <tr class="character-value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="character">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </section>
+
+        <input type="radio" name="slide" id="rad-slide1" value="1">
+        <input type="radio" name="slide" id="rad-slide2" value="2">
+        <input type="radio" name="slide" id="rad-slide3" value="3">
+        <label for="rad-slide1" class="slide-select">Слайд-1</label>
+        <label for="rad-slide2" class="slide-select">Слайд-2</label>
+        <label for="rad-slide3" class="slide-select">Слайд-3</label>
+      </section>
+
+      <section class="main-catalog-list">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul>
+          <li class="main-catalog-item">
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="main-catalog-item">
+
+          </li>
+          <li class="main-catalog-item">
+
+          </li>
+          <li class="main-catalog-item">
+
+          </li>
+          <li class="main-catalog-item">
+
+          </li>
+          <li class="main-catalog-item">
+
+          </li>
+        </ul>
+      </section>
+
+    </main>
 
   </body>
 </html>

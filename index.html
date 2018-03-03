@@ -7,7 +7,15 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
+    <!-- Radio for promo-slider -->
+    <input type="radio" name="slide" id="rad-slide1" value="1">
+    <input type="radio" name="slide" id="rad-slide2" value="2">
+    <input type="radio" name="slide" id="rad-slide3" value="3">
+    <!-- Radio for services-slider -->
+    <input type="radio" name="services" id="service-delivery" value="delivery">
+    <input type="radio" name="services" id="service-warranty" value="warranty">
+    <input type="radio" name="services" id="service-credit" value="credit">
+    <!-- Start main-header -->
     <header class="main-header">
       <h1 class="visually-hidden">Интернет-магазин аксессуаров Device</h1>
       <div class="header-wrapper">
@@ -15,6 +23,7 @@
         <input type="search" name="q" placeholder="Поиск по сайту">
         <input type="submit" value="Найти">
         <h2 class="catalog-title">каталог товаров</h2>
+        <!-- Start header-catalog (hide) -->
         <div class="header-catalog-wrapper">
             <ul class="header-catalog-list">
               <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
@@ -29,8 +38,10 @@
               <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </div>
+          <!-- End header-catalog (hide) -->
       </div>
       <div class="header-wrapper">
+        <!-- Start user-navigation and header-services -->
         <nav class="user-navigation">
           <ul class="navigation-links">
             <li class="login-link">Войти</li>
@@ -45,14 +56,19 @@
             <li><a href="">контакты</a></li>
           </ul>
         </nav>
+        <!-- End user-navigation and header-services -->
       </div>
     </header>
-
+    <!-- End main-header -->
+    <!-- Start main-content -->
     <main class="main-content">
-
+      <!-- Start section with promo item slider -->
       <section class="slider">
-
-        <section class="slide-1">
+          <label for="rad-slide1" class="slide-select">Слайд-1</label>
+          <label for="rad-slide2" class="slide-select">Слайд-2</label>
+          <label for="rad-slide3" class="slide-select">Слайд-3</label>
+        <!-- Slide num 1 -->
+          <section class="slide-1">
           <img src="img/slide1.png" alt="Изображение первого слайда">
           <span class="slide-num">01</span>
             <b class="slide-title">Делай селфи, <br>как Бен Стиллер!</b>
@@ -68,13 +84,13 @@
               <td>Карбон</td>
             </tr>
             <tr class="character">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
             </tr>
           </table>
         </section>
-
+        <!-- Slide num 2 -->
         <section class="slide-2">
             <img src="img/slide2.png" alt="Изображение второго слайда">
             <span class="slide-num">02</span>
@@ -88,11 +104,11 @@
                 <td>48 часов</td>
               </tr>
               <tr class="character">
-                <td>Без подзарядки</td>
+                <th>Без подзарядки</th>
               </tr>
             </table>
           </section>
-
+          <!-- Slide num 3 -->
           <section class="slide-3">
               <img src="img/slide3.png" alt="Изображение третьего слайда">
               <span class="slide-num">03</span>
@@ -107,20 +123,13 @@
                   <td>50 м</td>
                 </tr>
                 <tr class="character">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                  <th>Дальность полета</th>
+                  <th>Радиус поражения</th>
                 </tr>
               </table>
             </section>
-
-        <input type="radio" name="slide" id="rad-slide1" value="1">
-        <input type="radio" name="slide" id="rad-slide2" value="2">
-        <input type="radio" name="slide" id="rad-slide3" value="3">
-        <label for="rad-slide1" class="slide-select">Слайд-1</label>
-        <label for="rad-slide2" class="slide-select">Слайд-2</label>
-        <label for="rad-slide3" class="slide-select">Слайд-3</label>
-      </section>
-
+      </section> <!-- End slider -->
+      <!-- Start main-catalog -->
       <section class="main-catalog-list">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
@@ -128,24 +137,137 @@
             <a href="#">Виртуальная реальность</a>
           </li>
           <li class="main-catalog-item">
-
+              <a href="#">Моноподы для селфи</a>
           </li>
           <li class="main-catalog-item">
-
+              <a href="#">Экшн-камеры</a>
           </li>
           <li class="main-catalog-item">
-
+              <a href="#">Фитнес-браслеты</a>
           </li>
           <li class="main-catalog-item">
-
+              <a href="#">Умные часы</a>
           </li>
           <li class="main-catalog-item">
-
+              <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
-      </section>
+      </section> <!-- End main-catalog -->
+      <!-- Start services block -->
+      <section class="services">
 
-    </main>
+        <section class="service-delivery service-block">
+          <div class="service-wrapper">
+            <h2 class="service-title">Доставка</h2>
+            <p class="service-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+        </section>
 
+        <section class="service-warranty service-block">
+            <div class="service-wrapper">
+              <h2 class="service-title">Гарантия</h2>
+              <p class="service-text">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. <br> Товар, не дом, коенчно же.
+              </p>
+            </div>
+        </section>
+
+        <section class="service-credit service-block">
+            <div class="service-wrapper">
+              <h2 class="service-title">Кредит</h2>
+              <p class="service-text">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+        </section>
+
+        <!-- Services name (label) -->
+        <div class="services-wrapper">
+            <ul class="services-list">
+              <li class="services-item">
+                <label for="service-delivery" class="services-label">Доставка</label>
+              </li>
+              <li class="services-item">
+                  <label for="service-warranty" class="services-label">Гарантия</label>
+              </li>
+              <li class="services-item">
+                  <label for="service-credit" class="services-label">Кредит</label>
+              </li>
+            </ul>
+          </div>
+
+      </section> <!-- End section with services -->
+      <!-- Start partners block -->
+      <section class="partners">
+        <h2 class="visually-hidden">Партреры</h2>
+        <ul class="partners-list">
+          <li class="partners-item"><img src="img/partners-1.png" alt="Логотип партнера"></li>
+          <li class="partners-item"><img src="img/partners-2.png" alt="Логотип партнера"></li>
+          <li class="partners-item"><img src="img/partners-3.png" alt="Логотип партнера"></li>
+          <li class="partners-item"><img src="img/partners-4.png" alt="Логотип партнера"></li>
+        </ul>
+      </section>  <!-- End partners block -->
+      <!-- Start section about us -->
+      <section class="about-us">
+        <h2 class="about-us-title">О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+
+        <ul class="company-list">
+          <li class="company-list-item">Деловые Линии</li>
+          <li class="company-list-item">Автотрейдинг</li>
+          <li class="company-list-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#">Подробнее о нас</a>
+      </section> <!-- End about us -->
+      <!-- Start contacts -->
+      <section class="contacts">
+
+        <h2 class="contacts-title">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает</p>
+        <div class="map-adress">Карта</div>
+        <button class="write-us">Напишите нам</button>
+
+      </section> <!-- End contacts -->
+
+    </main> <!-- End main content -->
+    <!-- Start footer -->
+    <footer class="main-footer">
+      <!-- Start user navigation. Login + name-user + compare + cart -->
+      <div class="footer-user-nav">
+        <img src="img/logo-active.png" alt="Логотипа DEVICE" class="logo">
+        <ul class="footer-nav-links">
+            <li class="footer-login-link">Войти</li>
+            <li class="footer-user-sign-in"><a href="user.html">Валентин Петухов</a></li>
+            <li class="footer-go-out-link">Выйти</li>
+            <li class="footer-compare"><a href="compare.html">Сравнить</a></li>
+            <li class="footer-cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+      </div>  <!-- End user navigation -->
+      <!-- Start services links -->
+      <div class="footer-services-nav">
+        <adress class="footer-contact-adress">
+          г. Москва, ул. Строителей, 15
+        </adress>
+        <ul class="footer-services-links">
+          <li class="footer-services-item"><a href="#">Доставка</a></li>
+          <li class="footer-services-item"><a href="#">Доставка</a></li>
+          <li class="footer-services-item"><a href="#">Доставка</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div> <!-- End services links -->
+      <!-- Start social icon block + HTML Academy links -->
+      <div class="footer-social-nav">
+        <ul class="footer-social-links">
+          <li class="footer-social-item"><a href="facebook.com">Facebook</a></li>
+          <li class="footer-social-item"><a href="instagram.com">Instagram</a></li>
+          <li class="footer-social-item"><a href="twitter.com">Twitter</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </div> <!-- End social block -->
+
+    </footer> <!-- End footer -->
   </body>
 </html>

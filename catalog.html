@@ -7,10 +7,7 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <!-- Radio-btn for sort -->
-    <input type="radio" name="sort" id="sort-price">
-    <input type="radio" name="sort" id="sort-type">
-    <input type="radio" name="sort" id="sort-popular">
+
     <!-- Radio-btn for sort triangle -->
     <input type="radio" name="sort" id="sort-up">
     <input type="radio" name="sort" id="sort-down">
@@ -68,38 +65,102 @@
           </ul>
       </nav>
     </header>
-    <!-- End main-header -->
-    <!-- Start main-content -->
+
+
     <main class="main-content">
 
       <section class="catalog-categories">
-          <h2 class="catalog-categories-title">Моноподы для селфи</h2>
-          <ul class="catalog-categories-list">
-            <li class="catalog-categories-item">Главная</li>
-            <li class="catalog-categories-item">Каталог товаров</li>
-            <li class="catalog-categories-item">Моноподы для селфи</li>
-          </ul>
+        <h2 class="catalog-categories__title">Моноподы для селфи</h2>
+        <ul class="catalog-categories__list">
+          <li class="catalog-categories__item">
+            <a href="#" class="catalog-categories__link">Главная</a>
+          </li>
+          <li class="catalog-categories__item">
+            <a href="#" class="catalog-categories__link">Каталог товаров</a>
+          </li>
+          <li class="catalog-categories__item">
+            <a href="#" class="catalog-categories__link">Моноподы для селфи</a>
+          </li>
+        </ul>
       </section>
 
       <section class="filter">
-        <div class="wrapper-filter">
-          <h2 class="filter-caption-title">фильтр:</h2>
-          <p><b>Стоимость</b></p>
-          <!-- Форма фильтра стоимости -->
-          <p><b>Цвет</b></p>
-          <!-- Чекбоксы выбора цвета -->
-          <p><b>Bluetooth</b></p>
-          <!-- Выбор Да или Нет -->
-          <button class="filter-sort-btn">Показать</button>
+        <div class="filter__wrapper">
+          <h2 class="filter__caption">фильтр:</h2>
+            <form action="catalog.html">
+              <div class="filter__container">
+                <h3>Стоимость</h3>
+                <!-- Форма фильтра стоимости -->
+              </div>
+              <div class="filter__container">
+                <h3>Цвет</h3>
+                <ul class="color-selecter__list">
+                  <li class="color-selecter__item">
+                    <label class="color-selecter__label">
+                      Черный
+                      <input type="checkbox" name="color-selecter" value="black" class="color-selecter__checkbox">
+                    </label>
+                  </li>
+                  <li class="color-selecter__item">
+                    <label class="color-selecter__label">
+                      Белый
+                      <input type="checkbox" name="color-selecter" value="white" class="color-selecter__checkbox">
+                    </label>
+                  </li>
+                  <li class="color-selecter__item">
+                    <label class="color-selecter__label">
+                      Синий
+                      <input type="checkbox" name="color-selecter" value="blue" class="color-selecter__checkbox">
+                    </label>
+                  </li>
+                  <li class="color-selecter__item">
+                    <label class="color-selecter__label">
+                      Красный
+                      <input type="checkbox" name="color-selecter" value="red" class="color-selecter__checkbox">
+                    </label>
+                  </li>
+                  <li class="color-selecter__item">
+                    <label class="color-selecter__label">
+                      Розовый
+                      <input type="checkbox" name="color-selecter" value="pink" class="color-selecter__checkbox">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__container">
+                <h3>Bluetooth</h3>
+                <ul class="bluetooth-selecter__list">
+                  <li class="bluetooth-selecter__item">
+                    <label class="bluetooth-selecter__toogle">
+                      Есть
+                      <input type="radio" id="bluetooth-selecter__yes" name="bluetooth-selecter" value="yes" class="bluetooth-selecter__radio">
+                    </label>
+                  </li>
+                  <li class="bluetooth-selecter__item">
+                    <label class="bluetooth-selecter__toogle">
+                      Нет
+                      <input type="radio" id="bluetooth-selecter__none" name="bluetooth-selecter" value="no" class="bluetooth-selecter__radio">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <button class="filter__btn">Показать</button>
+            </form>
         </div>
       </section>
       <section class="sorted-catalog">
         <header class="sorted-catalog-header">
           <h2 class="sorted-caption">сортировка:</h2>
           <ul class="sorted-filter-list">
-            <li class="sorted-filter-item"><label for="sort-price">По цене</label></li>
-            <li class="sorted-filter-item"><label for="sort-type">По типу</label></li>
-            <li class="sorted-filter-item"><label for="sort-popular">По популярности</label></li>
+            <li class="sorted-filter-item">
+              <span class="sorted-filter__">По цене</span>
+            </li>
+            <li class="sorted-filter-item">
+              <span>По типу</span>
+            </li>
+            <li class="sorted-filter-item">
+              <span>По популярности</span>
+            </li>
           </ul>
           <ul class="sorted-up-down">
               <li class="sorted-filter-item"><label for="sort-up">+</label></li>

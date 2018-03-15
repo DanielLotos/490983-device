@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -16,19 +17,19 @@
         </a>
         <ul class="main-nav__user-nav">
           <li class="user-nav__item">
-            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="user-nav__search" type="text" placeholder="Поиск по сайту">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input class="user-nav__search" name="q" type="search" placeholder="Поиск по сайту">
               <input type="submit" value="Найти">
             </form>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__button btn-log-in">Войти</a>
+            <a href="#" class="user-nav__link link-log-in">Войти</a>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__button btn-compare">Сравнить</a>
+            <a href="#" class="user-nav__link link-compare">Сравнить</a>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__button btn-cart">Корзина</a>
+            <a href="#" class="user-nav__link link-cart">Корзина</a>
           </li>
         </ul>
         <ul class="main-nav__site-list">
@@ -37,16 +38,16 @@
               <ul class="drop-down-catalog">
                 <li class="drop-down-catalog__wrapper">
                   <ul class="drop-down-catalog__list">
-                    <li class="drop-down-catalog__item"><a href="#">Виртуальная реальность</a></li>
-                    <li class="drop-down-catalog__item"><a href="#">Моноподы для селфи</a></li>
-                    <li class="drop-down-catalog__item"><a href="#">Экшн-камеры</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Виртуальная реальность</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Моноподы для селфи</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Экшн-камеры</a></li>
                   </ul>
                   <ul class="drop-down-catalog__list">
-                    <li class="drop-down-catalog__item"><a href="#">Фитнес-браслеты</a></li>
-                    <li class="drop-down-catalog__item"><a href="#">Умные часы</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Фитнес-браслеты</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Умные часы</a></li>
                   </ul>
                   <ul class="drop-down-catalog__list">
-                    <li class="drop-down-catalog__item"><a href="#">Квадрокоптеры</a></li>
+                    <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Квадрокоптеры</a></li>
                   </ul>
                 </li>
               </ul>
@@ -80,7 +81,7 @@
         <div class="slider__slide-container">
           <img class="slide__image" src="img/slider-1.png" alt="Самая длинная палка для селфи в трех состояниях: разложенном, сложенном, и полусложенном" width="384" height="486">
           <span class="slide-number">01</span>
-          <p class="slide-title">Делай селфи, как Бен Стиллер!</p>
+          <p class="slide-title">Делай селфи, <br> как Бен Стиллер!</p>
           <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="#" class="slide__link btn-line">Подробнее</a>
           <table class="slide__features-table">
@@ -100,7 +101,7 @@
         <div class="slider__slide-container">
           <img class="slide__image" src="img/slider-2.png" alt="Мотивирующие фитнес-часы с надписью: Я вижу ты снова ешь" width="345" height="485">
           <span class="slide-number">02</span>
-          <p class="slide-title">Худеем правильно!!</p>
+          <p class="slide-title">Худеем <br> правильно!</p>
           <p class="slide-description">Мотивирующие Фитнес-браслеты помогут найти в себе силы не пропускать занатия и соблюдать диету.</p>
           <a href="#" class="slide__link btn-line">Подробнее</a>
           <table class="slide__features-table">
@@ -158,35 +159,35 @@
 
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <input class="visually-hidden" type="radio" name="services" id="service-delivery">
-        <input class="visually-hidden" type="radio" name="services" id="service-warranty">
-        <input class="visually-hidden" type="radio" name="services" id="service-credit">
         <div class="services-selecter__container">
           <ul class="services-selecter__list">
             <li class="services-selecter__item">
-              <label for="service-delivery" class="services-selecter__label btn-line">Доставка</label>
+              <input class="visually-hidden" type="radio" name="services" id="service-delivery">
+              <label for="service-delivery" class="btn-line services-selecter__label">Доставка</label>
             </li>
             <li class="services-selecter__item">
-              <label for="service-warranty" class="services-selecter__label btn-line">Гарантия</label>
+              <input class="visually-hidden" type="radio" name="services" id="service-warranty">
+              <label for="service-warranty" class="btn-line services-selecter__label">Гарантия</label>
             </li>
             <li class="services-selecter__item">
-              <label for="service-credit" class="services-selecter__label btn-line">Кредит</label>
+              <input class="visually-hidden" type="radio" name="services" id="service-credit">
+              <label for="service-credit" class="btn-line services-selecter__label">Кредит</label>
             </li>
           </ul>
         </div>
         <section class="services__item delivery">
           <h3 class="services__service-title">Доставка</h3>
-          <p class="services__service-desk">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="services__service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </section>
 
         <section class="services__item warranty">
           <h3 class="services__service-title">Гарантия</h3>
-          <p class="services__service-desk">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+          <p class="services__service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
         </section>
 
         <section class="services__item credit">
           <h3 class="services__service-title">Кредит</h3>
-          <p class="services__service-desk">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <p class="services__service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </section>
       </section>
 
@@ -226,7 +227,7 @@
             <li class="delivery-company__item">Автотрейдинг</li>
             <li class="delivery-company__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="about-us__link btn-line">Подробнее о нас</a>
+          <a href="#" class="btn-line about-us__link">Подробнее о нас</a>
         </section>
 
         <section class="contact">
@@ -235,7 +236,7 @@
           <a href="#" aria-label="Нажмите, чтобы увидеть развернутую карту. Адрес: улица Строителей, 15">
             <img class="contact__image-map" src="img/map.jpg" alt="Карта с нашим местоположением: улица Строителей, 15">
           </a>
-          <button class="contact__write-us btn-line">Напишите нам</button>
+          <button class="btn-line contact__write-us">Напишите нам</button>
         </section>
       </section>
 
@@ -258,7 +259,7 @@
         </li>
       </ul>
 
-      <address class="main-footer__adress">
+      <address class="main-footer__address">
         г. Москва, ул. Строителей, 15
       </address>
       <ul class="main-footer__services-list">
@@ -269,7 +270,7 @@
           <a href="#" class="footer-services__link">гарантия</a>
         </li>
         <li class="footer-services__item">
-          <a href="#" class="footer-services__link">контакта</a>
+          <a href="#" class="footer-services__link">контакты</a>
         </li>
       </ul>
       <a href="tel:+74954959595" class="main-footer__tel">Тел.: +7 (495) 495-95-95</a>
@@ -290,9 +291,6 @@
       </div>
     </footer>
 
-    </body>
-  </html>
-
     <div class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="POST" name="modal-write-us" class="write-us__form">
@@ -302,13 +300,13 @@
         </p>
         <p class="write-us__wrapper">
           <label for="write-us-email" class="write-us__caption">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+          <input id="write-us-email" type="email" name="email" placeholder="email@example.com" pattern="[A-Za-z0-9]+@[a-z0-9.-]+\.[a-z]{2,3}">
         </p>
         <p class="write-us__wrapper">
           <label for="write-us-mailtext" class="write-us__caption">Текст письма::</label>
           <input id="write-us-mailtext" type="textarea" name="text-mail" placeholder="В свободной форме">
         </p>
-        <input type="submit" value="отправить">
+        <button type="submit" class="btn-line btn-write-us">Отправить</button>
       </form>
       <button class="modal__btn-close" type="button">Закрыть</button>
     </div>

@@ -19,7 +19,7 @@
             <div class="main-nav__container">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <input class="user-nav__search" name="q" type="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти">
+                <input class="user-nav__submit" type="submit" value="Найти">
               </form>
               <ul class="main-nav__user-nav">
                 <li class="user-nav__item">
@@ -75,126 +75,171 @@
       <section class="slider">
         <h2 class="visually-hidden">Промо-слайдеры</h2>
         <div class="container">
-          <div class="slider__slide-select-container">
-            <label for="promo-slide1" class="slide-selecter" aria-label="Показать слайд 1"></label>
-            <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide1">
-            <label for="promo-slide2" class="slide-selecter" aria-label="Показать слайд 2"></label>
-            <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide2">
-            <label for="promo-slide3" class="slide-selecter" aria-label="Показать слайд 3"></label>
-            <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide3">
-          </div>
-          <div class="slider__slide-container">
-            <img class="slide__image" src="img/slider-1.png" alt="Самая длинная палка для селфи в трех состояниях: разложенном, сложенном, и полусложенном" width="384" height="486">
-            <span class="slide-number">01</span>
-            <p class="slide-title">Делай селфи, <br> как Бен Стиллер!</p>
-            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#" class="slide__link btn-line">Подробнее</a>
-            <table class="slide__features-table">
-              <tr class="features-table__value">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr class="features-table__caption">
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
-            </table>
-          </div>
 
-          <div class="slider__slide-container">
-            <img class="slide__image" src="img/slider-2.png" alt="Мотивирующие фитнес-часы с надписью: Я вижу ты снова ешь" width="345" height="485">
-            <span class="slide-number">02</span>
-            <p class="slide-title">Худеем <br> правильно!</p>
-            <p class="slide-description">Мотивирующие Фитнес-браслеты помогут найти в себе силы не пропускать занатия и соблюдать диету.</p>
-            <a href="#" class="slide__link btn-line">Подробнее</a>
-            <table class="slide__features-table">
-              <tr class="features-table__value">
-                <td>48 часов</td>
-              </tr>
-              <tr class="features-table__caption">
-                <th>Без подзарядки</th>
-              </tr>
-            </table>
-          </div>
+          <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide1" checked>
+          <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide2">
+          <input class="visually-hidden" type="radio" name="toggle-slide" id="promo-slide3">
 
-          <div class="slider__slide-container">
-            <img class="slide__image" src="img/slider-3.png" alt="Белый квадрокоптер с лазером, замаскированным под обычную камеру" width="526" height="334">
-            <span class="slide-number">03</span>
-            <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
-            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#" class="slide__link btn-line">Подробнее</a>
-            <table class="slide__features-table">
-              <tr class="features-table__value">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr class="features-table__caption">
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
-            </table>
+          <div class="slider__slide-selecter-container"><!--
+          --><label for="promo-slide1" class="slide-selecter" aria-label="Показать слайд 1"></label><!--
+          --><label for="promo-slide2" class="slide-selecter" aria-label="Показать слайд 2"></label><!--
+          --><label for="promo-slide3" class="slide-selecter" aria-label="Показать слайд 3"></label><!--
+          --></div>
+
+          <div class="sliders-container">
+            <div class="sliders-container__slide">
+              <div class="slide__image-container">
+                <img class="slide__image" src="img/slider-1.png" alt="Самая длинная палка для селфи в трех состояниях: разложенном, сложенном, и полусложенном" width="384" height="486">
+              </div>
+              <span class="slide-number">01</span>
+              <div class="slide__about-product">
+                <p class="slide-title">Делай селфи, <br> как Бен Стиллер!</p>
+                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a href="#" class="slide__link btn-line">Подробнее</a>
+                <table class="slide__features-table">
+                  <tr class="features-table__value">
+                    <td class="features-table__value-item">8,5 м</td>
+                    <td class="features-table__value-item">5 кг</td>
+                    <td class="features-table__value-item">Карбон</td>
+                  </tr>
+                  <tr class="features-table__caption">
+                    <th class="features-table__caption-item">Длина палки</th>
+                    <th class="features-table__caption-item">Вес палки</th>
+                    <th class="features-table__caption-item">Материал</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="sliders-container__slide">
+              <div class="slide__image-container">
+                <img class="slide__image" src="img/slider-2.png" alt="Мотивирующие фитнес-часы с надписью: Я вижу ты снова ешь" width="345" height="485">
+              </div>
+              <span class="slide-number">02</span>
+              <div class="slide__about-product">
+                <p class="slide-title">Худеем <br> правильно!</p>
+                <p class="slide-description">Мотивирующие Фитнес-браслеты помогут найти в себе силы не пропускать занатия и соблюдать диету.</p>
+                <a href="#" class="slide__link btn-line">Подробнее</a>
+                <table class="slide__features-table">
+                  <tr class="features-table__value">
+                    <td class="features-table__value-item">48 часов</td>
+                  </tr>
+                  <tr class="features-table__caption">
+                    <th class="features-table__caption-item">Без подзарядки</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="sliders-container__slide">
+              <div class="slide__image-container">
+                <img class="slide__image" src="img/slider-3.png" alt="Белый квадрокоптер с лазером, замаскированным под обычную камеру" width="526" height="334">
+              </div>
+              <span class="slide-number">03</span>
+              <div class="slide__about-product">
+                <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a href="#" class="slide__link btn-line">Подробнее</a>
+                <table class="slide__features-table">
+                  <tr class="features-table__value">
+                    <td class="features-table__value-item">800 м</td>
+                    <td class="features-table__value-item">50 м</td>
+                  </tr>
+                  <tr class="features-table__caption">
+                    <th class="features-table__caption-item">Дальность полета</th>
+                    <th class="features-table__caption-item">Радиус поражения</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
+
       </section>
 
       <section class="popular-categories">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
-        <ul class="popular-categories__list">
-          <li class="popular-categories__item">
-            <a href="#" class="popular-categories__link">Виртуальная реальность</a>
-          </li>
-          <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">Моноподы для селфи</a>
-          </li>
-          <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">Экшн-камеры</a>
-          </li>
-          <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">Фитнес-браслеты</a>
-          </li>
-          <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">Умные часы</a>
-          </li>
-          <li class="popular-categories__item">
-              <a href="#" class="popular-categories__link">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="popular-categories__list">
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Виртуальная реальность</p>
+              </a>
+            </li>
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Моноподы для селфи</p>
+              </a>
+            </li>
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Экшн-камеры</p>
+              </a>
+            </li>
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Фитнес-браслеты</p>
+              </a>
+            </li>
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Умные часы</p>
+              </a>
+            </li>
+            <li class="popular-categories__item">
+              <a href="#" class="popular-categories__link">
+                <p class="popular-categories__link-title">Квадрокоптеры</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <div class="services-selecter__container">
-          <ul class="services-selecter__list">
+        <div class="container">
+
+          <!-- <ul class="services-selecter__list">
             <li class="services-selecter__item">
-              <input class="visually-hidden" type="radio" name="services" id="service-delivery">
+              <input class="services-selecter__radio delivery visually-hidden" type="radio" name="services" id="service-delivery" checked>
               <label for="service-delivery" class="btn-line services-selecter__label">Доставка</label>
             </li>
             <li class="services-selecter__item">
-              <input class="visually-hidden" type="radio" name="services" id="service-warranty">
+              <input class="services-selecter__radio warranty visually-hidden" type="radio" name="services" id="service-warranty">
               <label for="service-warranty" class="btn-line services-selecter__label">Гарантия</label>
             </li>
             <li class="services-selecter__item">
-              <input class="visually-hidden" type="radio" name="services" id="service-credit">
+              <input class="services-selecter__radio credit visually-hidden" type="radio" name="services" id="service-credit">
               <label for="service-credit" class="btn-line services-selecter__label">Кредит</label>
             </li>
-          </ul>
+          </ul> -->
+
+          <input class="services-selecter__radio delivery visually-hidden" type="radio" name="services" id="service-delivery" checked>
+          <input class="services-selecter__radio warranty visually-hidden" type="radio" name="services" id="service-warranty">
+          <input class="services-selecter__radio credit visually-hidden" type="radio" name="services" id="service-credit">
+
+          <div class="services-selecter__container">
+            <label for="service-delivery" class="btn-line services-selecter__label">Доставка</label>
+            <label for="service-warranty" class="btn-line services-selecter__label">Гарантия</label>
+            <label for="service-credit" class="btn-line services-selecter__label">Кредит</label>
+          </div>
+
+          <section class="services__item delivery">
+            <h3 class="services__service-title">Доставка</h3>
+            <p class="services__service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </section>
+
+          <section class="services__item warranty">
+            <h3 class="services__service-title">Гарантия</h3>
+            <p class="services__service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+          </section>
+
+          <section class="services__item credit">
+            <h3 class="services__service-title">Кредит</h3>
+            <p class="services__service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+
         </div>
-        <section class="services__item delivery">
-          <h3 class="services__service-title">Доставка</h3>
-          <p class="services__service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
-
-        <section class="services__item warranty">
-          <h3 class="services__service-title">Гарантия</h3>
-          <p class="services__service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
-        </section>
-
-        <section class="services__item credit">
-          <h3 class="services__service-title">Кредит</h3>
-          <p class="services__service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
       </section>
 
       <section class="brands">

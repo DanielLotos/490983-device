@@ -872,7 +872,8 @@ input[type="checkbox"]:disabled + .form__filter-selecter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -968,6 +969,7 @@ input[type="checkbox"]:disabled + .form__filter-selecter {
 
 .services {
   position: relative;
+  margin-bottom: 169px;
 }
 
 .services::before {
@@ -1066,3 +1068,48 @@ input[type="checkbox"]:disabled + .form__filter-selecter {
   height: 188px;
   background-image: url(../img/credit.svg);
 }
+
+.brands__list {
+  padding: 0;
+  margin: 0;
+}
+
+.brands__item {
+  display: inline-block;
+}
+
+.brands__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.brands__item:nth-last-child(2) {
+  margin-right: 32px;
+}
+
+/*
+.brands__image:last-of-type {
+  display: none;
+}
+
+.brands__link:hover .brands__image:first-of-type {
+  display: none;
+}
+
+.brands__link:hover .brands__image:last-of-type {
+  display: block;
+} */
+
+.brands__image {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands__image:hover {
+  -webkit-filter: none;
+          filter: none;
+  opacity: 1;
+}
+
+/* END BRANDS SECTION */
+

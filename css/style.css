@@ -1418,15 +1418,15 @@ input[type="checkbox"]:disabled + .form__filter-selecter {
 }
 
 .btn-fb {
-  background-image: url("../img/fb.svg");
+  background-image: url(../img/fb.svg);
 }
 
 .btn-inst {
-  background-image: url("../img/instagram.svg");
+  background-image: url(../img/instagram.svg);
 }
 
 .btn-twitter {
-  background-image: url("../img/twitter.svg");
+  background-image: url(../img/twitter.svg);
 }
 
 .main-footer__copyright-academy {

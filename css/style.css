@@ -278,6 +278,7 @@ ul {
 
 .services-selecter__label {
   width: 160px;
+  cursor: pointer;
 }
 
 .services-selecter__label:active,

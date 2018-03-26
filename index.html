@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -49,16 +49,16 @@
                   <ul class="drop-down-catalog">
                     <li class="drop-down-catalog__wrapper">
                       <ul class="drop-down-catalog__list">
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Виртуальная реальность</a></li>
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Моноподы для селфи</a></li>
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Экшн-камеры</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Виртуальная реальность</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Моноподы для селфи</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Экшн-камеры</a></li>
                       </ul>
                       <ul class="drop-down-catalog__list">
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Фитнес-браслеты</a></li>
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Умные часы</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Фитнес-браслеты</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Умные часы</a></li>
                       </ul>
                       <ul class="drop-down-catalog__list">
-                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="#">Квадрокоптеры</a></li>
+                        <li class="drop-down-catalog__item"><a class="drop-down-catalog__link" href="catalog.html">Квадрокоптеры</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -269,6 +269,7 @@
       </section>
 
       <section class="company-info">
+        <h2 class="visually-hidden">Информация о компании и обратная связь</h2>
         <div class="container">
           <section class="about-us">
             <h2 class="about-us__title">О нас</h2>
@@ -285,10 +286,10 @@
           --><section class="contact">
             <h2 class="contact__title">Контакты</h2>
             <p class="contact__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#" aria-label="Нажмите, чтобы увидеть развернутую карту. Адрес: улица Строителей, 15">
+            <a href="map.html">
               <img class="contact__image-map" src="img/map.jpg" alt="Карта с нашим местоположением: улица Строителей, 15">
             </a>
-            <button class="btn-line contact__write-us">Напишите нам</button>
+            <a href="writeus.html" class="btn-line contact__write-us">Напишите нам</a>
           </section>
         </div>
       </section>
@@ -367,32 +368,37 @@
         </div>
       </div>
     </footer>
-<!--
-    <div class="modal modal-write-us">
+
+    <div class="modal-write-us modal-container">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="POST" name="modal-write-us" class="write-us__form">
         <p class="write-us__wrapper">
           <label for="write-us-username" class="write-us__caption">Ваше имя:</label>
-          <input id="write-us-username" type="text" name="username" placeholder="Имя Фамилия">
+          <input class="write-us__username" id="write-us-username" type="text" name="username" placeholder="Имя Фамилия">
         </p>
         <p class="write-us__wrapper">
           <label for="write-us-email" class="write-us__caption">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" placeholder="email@example.com" pattern="[A-Za-z0-9]+@[a-z0-9.-]+\.[a-z]{2,3}">
+          <input class="write-us__email" id="write-us-email" type="email" name="email" placeholder="email@example.com" pattern="[A-Za-z0-9]+@[a-z0-9.-]+\.[a-z]{2,3}">
         </p>
         <p class="write-us__wrapper">
-          <label for="write-us-mailtext" class="write-us__caption">Текст письма::</label>
-          <input id="write-us-mailtext" type="textarea" name="text-mail" placeholder="В свободной форме">
+          <label class="write-us__caption" for="write-us-mailtext">Текст письма:</label>
+          <textarea class="write-us__mail-textarea" id="write-us-mailtext" name="letter" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit" class="btn-line btn-write-us">Отправить</button>
       </form>
-      <button class="modal__btn-close" type="button">Закрыть</button>
+      <button class="modal__btn-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </div>
 
-    <div class="modal modal-map">
+    <div class="modal-map modal-container">
       <h2 class="visually-hidden">Развернутая карта</h2>
-      <img class="modal-map__image" src="http://placehold.it/960x559" alt="Карта с нашим местоположением: улица Строителей, 15">
-      <button class="modal-map__close-button" type="button">Закрыть</button>
-    </div> -->
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBepQKvxxA" width="960" height="559"></iframe>
+      <button class="modal__btn-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
 
+  <script src="js/script-min.js"></script>
   </body>
 </html>

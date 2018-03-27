@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style-min.css">
     <title>HTML Academy: Девайс</title>
@@ -108,9 +109,9 @@
                     <div class="range__scale">
                         <div class="range__scale-bar"></div>
                     </div>
-                    <div class="range__toggle range__toggle--min"></div>
+                    <div class="range__toggle range__toggle--min" tabindex="0"></div>
                     <span class="range__min-price">от 0</span>
-                    <div class="range__toggle range__toggle--max"></div>
+                    <div class="range__toggle range__toggle--max" tabindex="0"></div>
                     <span class="range__max-price">до 5000</span>
                   </div>
                 </fieldset>
@@ -184,7 +185,7 @@
                     </p>
                   </li>
                   <li class="catalog__item catalog__item--hover">
-                    <h3 class="item__title visually-hidden">Профессиональная  селфи-палка</h3>
+                    <h3 class="item__title visually-hidden">Профессиональная селфи-палка</h3>
                     <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка" class="catalog__item-image">
                     <div class="catalog__item-to-cart">
                       <button class="btn-line item__btn-to-cart">в корзину</button>
@@ -192,7 +193,7 @@
                     </div>
                     <p class="catalog__item-price">
                       <a href="catalog-item.html" class="catalog__item-link">
-                        Профессиональная селфи-палка
+                        Профессиональная <br> селфи-палка
                       </a>
                       <span class="catalog__item-price-value">1 500 руб.</span>
                     </p>
